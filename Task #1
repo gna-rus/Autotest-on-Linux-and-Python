@@ -1,0 +1,13 @@
+import subprocess
+
+#task 1
+def fun_for_test(text, order):
+    out = order.stdout
+    if text in out and 0 == res.returncode:
+        return True
+    else:
+        return False
+
+text = input()
+res = subprocess.run(args="cat /etc/os-release", shell=True, stdout=subprocess.PIPE, encoding="utf-8")
+print(fun_for_test(text, res))
